@@ -2,7 +2,8 @@
 rebase of old project
 
 This is a project for internal use, demostrating the combination use of dbt, snowflake, azure devops.
-Data come from azure blob and will be pushlished to PowerBI
+
+Data comes from azure blob storage and will be pushlished to PowerBI
 
 Pipline triggering by {**manual**}
 
@@ -22,4 +23,6 @@ According to my plan it should involve
 
 ### Potentials todos:
 
+1. Create a role in snowflake that excluding to dbt use;
 1. ingesting stream data;
+1. containerize data pipeline and make it a micro service;
