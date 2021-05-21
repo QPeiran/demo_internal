@@ -36,13 +36,9 @@ steps:
     export PATH=$PATH:/home/vsts_azpcontainer/.local/bin
     cd dbt_snowflake_demo_i 
     dbt debug
-  displayName: 'DBT install then debug'
-
-- script: |
     dbt run
     dbt test
-  displayName: 'DBT run then test'
+  displayName: 'DBT install then run and test'
 
 - script: |
-    dbt clean
-  displayName: 'echo Pipeline has finished!'
+    echo Pipeline has finished!
