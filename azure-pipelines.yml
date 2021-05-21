@@ -14,10 +14,14 @@ container:
   options: -u root
 
 steps:
+- task: PythonScript@0
+  inputs:
+    scriptSource: 'filePath'
+    scriptPath: './test.py'
 
 - task: DownloadSecureFile@1
   name: SettingProfile
-  displayName: 'Downloading Profile for Snowflake'
+  displayName: 'Downloading my_profile for Snowflake'
   inputs:
     secureFile: 'my_profiles.yml'
 
@@ -25,13 +29,17 @@ steps:
     echo Installing $(SettingProfile.secureFilePath) to the ~/.dbt...
     mkdir ~/.dbt
     cp $(SettingProfile.secureFilePath) ~/.dbt/profiles.yml
-  displayName: Installing Profile for Snowflake
+  displayName: put my_profile to the right location in ubuntu
     
 - script: |
     pip install dbt --user
     export PATH=$PATH:/home/vsts_azpcontainer/.local/bin
-    cd dbt_snowflake_demo_i
-    dbt compile
+    cd dbt_snowflake_demo_i 
+    dbt debug
     dbt test
+  displayName: 'DBT debug then test'
+
+- script: |
     dbt run
-  displayName: 'Compile, Test, and Run'
+    echo Pipeline has finished!
+  displayName: 'DBT run'
