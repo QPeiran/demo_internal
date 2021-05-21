@@ -43,6 +43,6 @@ steps:
     dbt test
   displayName: 'DBT run then test'
 
-  -script: |
+-script: |
     dbt clean
   displayName: 'echo Pipeline has finished!'
