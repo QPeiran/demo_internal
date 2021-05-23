@@ -24,5 +24,11 @@ According to my plan it should involve
 ### Potentials todos:
 
 1. Create a role in snowflake that excluding to dbt use;
-1. ingesting stream data;
-1. containerize data pipeline and make it a micro service;
+1. Ingesting stream data;
+1. Containerize data pipeline and make it a micro service;
+1. Embed SonarQube into pipeline;
+1. Build an agent pool for data engineering team only.
+
+
+### Question:
+- Use azure devops agent or function app to execute script? (pros / cons)
