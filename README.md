@@ -27,9 +27,10 @@ According to my plan it should involve
 
 1. Create a role in snowflake that excluding to dbt use;
 1. Ingesting stream data;
-1. Containerize data pipeline and make it a micro service;
+1. Containerize data pipeline (even make it a micro service);
 1. Embed SonarQube into pipeline;
-1. Build an agent pool for data engineering team only.
+1. Build an agent pool for data engineering team only;
+1. Host the DBT docs from a seperate port (outside of the agent);
 
 
 ### Question:
