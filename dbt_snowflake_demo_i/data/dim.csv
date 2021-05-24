@@ -1,3 +1,4 @@
-Team, Location
-T_AKL, Auckland
-T_WLT, Wellington
+Team, Location, Wind LV
+T_AKL, Auckland, 3
+T_WLT, Wellington, 5
+T_CHC, Christchurch, 4

@@ -36,6 +36,7 @@ steps:
     export PATH=$PATH:/home/vsts_azpcontainer/.local/bin
     cd dbt_snowflake_demo_i 
     dbt debug
+    dbt seed
     dbt run
     dbt test
   displayName: 'DBT install then run and test'
