@@ -3,9 +3,11 @@ rebase of old project
 
 This is a project for internal use, demostrating the combination use of dbt, snowflake, azure devops.
 
-Data comes from azure blob storage and will be pushlished to PowerBI
+![ScreenShot](./Architect.PNG?raw=false "Demo Solution Architect")
 
-Pipline triggering by {**manual**}
+Data comes from azure blob storage and/or local and will be pushlished to PowerBI
+
+Pipline triggering by {**commit to the main branch**}
 
 At this moment I would like to start to build a prototype data pipeline to process {**a small amount of batch data**}. 
 
