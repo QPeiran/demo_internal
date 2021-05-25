@@ -13,4 +13,5 @@ sources:
 models:
     - name: demo_i_model_1
       description: "fact model join with dim table"
+      # columns: # todos
           
