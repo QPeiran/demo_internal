@@ -1,0 +1,16 @@
+version: 2
+
+sources:
+  - name: demo_i_sample_data
+    description: 'A made up story about rugby matches between cities'
+    database: demo_db
+    schema: public
+    tables:
+      - name: dim_city
+        description: 'Some made up info about each team'
+      - name: fact
+        description: 'Some made up match results'
+models:
+    - name: demo_i_model_1
+      description: "fact model join with dim table"
+          
