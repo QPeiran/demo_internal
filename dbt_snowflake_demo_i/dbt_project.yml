@@ -34,7 +34,7 @@ clean-targets:         # directories to be removed by `dbt clean`
 models:
   dbt_snowflake_demo_i: ## <== 3/3
       # Applies to all files under models/example/
-      example:
-          materialized: view
+    #   example:
+    #       materialized: view
       demo_i:
           materialized: view
