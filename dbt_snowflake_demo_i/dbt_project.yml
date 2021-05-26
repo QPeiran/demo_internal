@@ -47,4 +47,4 @@ seeds:
     dim_city:
       +quote_columns: false ## false will all the column names
       +column_types:
-        Team: varchar(256)
+        Team: varchar(256) ## 

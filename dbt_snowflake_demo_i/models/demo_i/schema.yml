@@ -10,8 +10,11 @@ sources:
         description: 'Some made up info about each team'
       - name: fact
         description: 'Some made up match results'
+      - name: island_mapping
+        description: 'mapping rules'
 models:
     - name: demo_i_model_1
       description: "fact model join with dim table"
       # columns: # todos
-          
+    - name: demo_i_model_2
+      description: "mapping cities to their island"

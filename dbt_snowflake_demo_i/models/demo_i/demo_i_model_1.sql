@@ -5,7 +5,7 @@ source_dim_city as (
     select * from {{source('demo_i_sample_data', 'dim_city')}}
 ),
 final as (
-    select Team, Opponet, Date, Win_Loss, Location, Rate
+    select *
     from source_fact
     left join source_dim_city
     using (Team)
