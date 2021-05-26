@@ -45,6 +45,6 @@ seeds:
         # Teams: varchar(256) # issues
 
     dim_city:
-      +quote_columns: false
+      +quote_columns: true ## false will upcase the column names
       +column_types:
         Team: varchar(256)
