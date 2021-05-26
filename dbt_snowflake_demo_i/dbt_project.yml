@@ -39,12 +39,12 @@ models:
 seeds:
   dbt_snowflake_demo_i:
     fact:
-      +quote_columns: true
+      +quote_columns: false
       +column_types:
         Date: DATE
         # Teams: varchar(256) # issues
 
     dim_city:
-      +quote_columns: true ## false will upcase the column names
+      +quote_columns: false ## false will all the column names
       +column_types:
         Team: varchar(256)
