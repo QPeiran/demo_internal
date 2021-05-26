@@ -11,10 +11,10 @@ sources:
       - name: fact
         description: 'Some made up match results'
       - name: island_mapping
-        description: 'mapping rules'
+        description: 'mapping rules -- city and island'
 models:
     - name: demo_i_model_1
-      description: "fact model join with dim table"
+      description: "fact model join with city dimention table"
       # columns: # todos
     - name: demo_i_model_2
       description: "mapping cities to their island"
