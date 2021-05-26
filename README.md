@@ -25,6 +25,7 @@ According to my plan it should involve
 
 ### Potentials todos:
 
+1. Ingest data from azure blob storage;
 1. Create a role in snowflake that excluding to dbt use;
 1. Ingesting stream data;
 1. Containerize data pipeline (even make it a micro service);

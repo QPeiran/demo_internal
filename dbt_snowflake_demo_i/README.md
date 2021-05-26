@@ -1,15 +1,7 @@
-Welcome to your new dbt project!
+### Issues so far:
+```dbt seed```
 
-### Using the starter project
+- ```column_types:``` can only recogonize the first column
+        **output:** ```{the second column} does not match the name of any column in this table```
 
-Try running the following commands:
-- dbt run
-- dbt test
-
-
-### Resources:
-- Learn more about dbt [in the docs](https://docs.getdbt.com/docs/introduction)
-- Check out [Discourse](https://discourse.getdbt.com/) for commonly asked questions and answers
-- Join the [chat](http://slack.getdbt.com/) on Slack for live discussions and support
-- Find [dbt events](https://events.getdbt.com) near you
-- Check out [the blog](https://blog.getdbt.com/) for the latest news on dbt's development and best practices
+- How to customize ```DATE``` format from **dbt**? It can only ingest YYYY-MM-DD at this moment

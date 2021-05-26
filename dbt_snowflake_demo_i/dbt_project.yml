@@ -33,8 +33,18 @@ clean-targets:         # directories to be removed by `dbt clean`
 # using the `{{ config(...) }}` macro.
 models:
   dbt_snowflake_demo_i: ## <== 3/3
-      # Applies to all files under models/example/
-    #   example:
-    #       materialized: view
-      demo_i:
-          materialized: view
+    demo_i:
+      materialized: view
+
+seeds:
+  dbt_snowflake_demo_i:
+    fact:
+      +quote_columns: true
+      +column_types:
+        Date: DATE
+        # Teams: varchar(256) # issues
+
+    dim_city:
+      +quote_columns: false
+      +column_types:
+        Team: varchar(256)
