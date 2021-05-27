@@ -17,4 +17,4 @@ The dbt version I am using for development is ```0.20.0-b1```, however the produ
 
 Btw, my personal snowflake free account 30 days trial will expire soon (04/06/21).
 
-***Do not use ```space``` in .csv. dbt/snowfalke are not going to trim them automatically**
+***Do not use ```space``` in .csv because dbt/snowfalke are not going to trim them automatically**
