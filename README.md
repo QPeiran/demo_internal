@@ -32,7 +32,7 @@ According to my plan it should involve
 1. Embed SonarQube into pipeline;
 1. Build an agent pool for data engineering team only;
 1. Host the DBT docs from a seperate port (outside of the agent);
-
+1. something else..
 
 ### Question:
 - Use azure devops agent or function app to execute script? (pros / cons)
