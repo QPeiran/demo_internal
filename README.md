@@ -30,9 +30,10 @@ According to my plan it should involve
 1. Ingesting stream data;
 1. Containerize data pipeline (even make it a micro service);
 1. Embed SonarQube into pipeline;
-1. Build an agent pool for data engineering team only;
+1. Build an agent pool for data engineering team only (avoid dbt installing every time);
 1. Host the DBT docs from a seperate port (outside of the agent);
-1. something else..
+1. Talk to architect and security people about connecting Snowflake and PowerBI (Production env.).
+1. Use a linked service to connect to DBT cloud (instead of installing in my agent)
 
 ### Question:
 - Use azure devops agent or function app to execute script? (pros / cons)
