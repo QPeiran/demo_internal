@@ -19,9 +19,11 @@ According to my plan it should involve
 
 •	Azure Devops – orchestration & automation
 
-•	GitHub -- version control 
+•	GitHub -- version control & repo host
 
-•	Ideally the data would be ingested from blob storage and be published via PowerBI.
+•	Ideally the data would be ingested from blob storage and be published via PowerBI. 
+
+•	Trigger periodically.
 
 ### Potentials todos:
 
