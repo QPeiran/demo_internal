@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <script>
+    // node.js
+const API_URL = 'https://api.giphy.com/v1/gifs/random?api_key=dc6zaTOxFJmzC&tag=Christmas';
+function GetCG(){
+  fetch(API_URL)
+  .then(response => response.json())
+  .then(function (json) {
+    var image = document.createElement('img');
+    image.src = 'https://cdna.artstation.com/p/assets/images/images/008/620/676/original/evgenii-barankin-santa-crist.gif?1513976231';
+    document.body.appendChild(image);
+    //console.log(json.data.image_url);
+  } )
+}
+    </script>
+    </head>
+
+<body>
+  <button type="button" style="height:200px;width:200px;font-size : 40px"
+onclick="GetCG()">
+Click me !</button>
+  <h1>Merry Xmas MM3 D&I! </h1>
+  <h2> Thank you all for supporting through this Busy but Fruitfull Year! </h2>
+  <center><h2> -- Cheers, Peiran</h2></center>
+  <h2></h2><div id="demo"></div>
+
+
+
+
+</body>
+</html>
